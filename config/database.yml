@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: <%= ENV["DEVELOPMENT_POSTGRES_HOST"] %>
+  database: <%= ENV["DEVELOPMENT_POSTGRES_DATABASE"] %>
+  username: <%= ENV["DEVELOPMENT_POSTGRES_USERNAME"] %>
+  password: <%= ENV["DEVELOPMENT_POSTGRES_PASSWORD"] %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: <%= ENV["TEST_POSTGRES_HOST"] %>
+  database: <%= ENV["TEST_POSTGRES_DATABASE"] %>
+  username: <%= ENV["TEST_POSTGRES_USERNAME"] %>
+  password: <%= ENV["TEST_POSTGRES_PASSWORD"] %>
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: <%= ENV["PRODUCTION_POSTGRES_HOST"] %>
+  database: <%= ENV["PRODUCTION_POSTGRES_DATABASE"] %>
+  username: <%= ENV["PRODUCTION_POSTGRES_USERNAME"] %>
+  password: <%= ENV["PRODUCTION_POSTGRES_PASSWORD"] %>
