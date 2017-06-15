@@ -47,7 +47,7 @@ docker build . -t salsanads/sinatra-api-sample
 docker run --net=host -d -p 9393:9393 salsanads/sinatra-api-sample
 ```
 
-3. Wait around 1 minute after running the image, then access it at [http://127.0.0.1:9393/users](http://127.0.0.1:9393/users) on the host
+3. Access it on the host at [http://127.0.0.1:9393/users](http://127.0.0.1:9393/users)
 
 ## How to Run Test
 1. Install Bundler
