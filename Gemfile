@@ -10,6 +10,8 @@ gem 'sinatra-activerecord'
 
 gem 'shotgun'
 
+gem 'another_hola', '>= 0.1.0'
+
 group :development, :test do
   gem 'dotenv'
 end
